@@ -1,0 +1,27 @@
+name: Feature request
+description: An idea for something Selekta should do.
+labels: [feature]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What are you trying to do?
+      description: The task or problem, in your own words. This helps more than a finished design.
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: How could Selekta help?
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database
+      multiple: true
+      options:
+        - PostgreSQL
+        - MySQL or MariaDB
+        - SQLite
+        - SQL Server
+        - Redis
+        - Not database specific

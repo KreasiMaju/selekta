@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation and troubleshooting
+    url: https://selekta.kreasimaju.id/docs/troubleshooting/
+    about: Most connection errors are explained here, with what to check.
+  - name: Security problem
+    url: mailto:security@kreasimaju.id
+    about: Please report security problems by email, not in a public issue.

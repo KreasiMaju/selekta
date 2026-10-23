@@ -1,0 +1,68 @@
+name: Bug report
+description: Something in Selekta does not work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. Issues are public: **do not paste passwords, connection strings with passwords or production data.**
+  - type: input
+    id: version
+    attributes:
+      label: Selekta version
+      description: Settings › About, for example 0.3.0.
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS (Apple Silicon)
+        - macOS (Intel)
+        - Windows 11
+        - Windows 10
+        - Linux (Ubuntu or Debian, .deb)
+        - Linux (Fedora, .rpm)
+        - Other Linux
+    validations:
+      required: true
+  - type: dropdown
+    id: engine
+    attributes:
+      label: Database
+      options:
+        - PostgreSQL
+        - MySQL or MariaDB
+        - SQLite
+        - SQL Server
+        - Redis
+        - Not database specific
+    validations:
+      required: true
+  - type: input
+    id: server
+    attributes:
+      label: Server version and how you connect
+      description: For example "PostgreSQL 16 through an SSH tunnel", "MySQL 8 with TLS", "Redis 7 over the VPN".
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the orders table
+        2. Edit a cell and click Apply
+        3. …
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened
+      description: Include the exact error message. A screenshot helps, as long as it shows no secrets.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
