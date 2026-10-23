@@ -18,7 +18,7 @@ Never paste passwords, connection strings with passwords, or production data int
 
 ## Security
 
-Found a security problem? Do not open a public issue. Email [security@kreasimaju.id](mailto:security@kreasimaju.id) instead.
+Found a security problem? Do not open a public issue. [Report it privately](https://github.com/KreasiMaju/selekta/security/advisories/new) instead: only the Selekta team can see it.
 
 ---
 
